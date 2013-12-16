@@ -1,5 +1,7 @@
 #
 # Sony Ericsson XPERIA X8 aka Shakira properties
+# 
+# TeamMEX DATA PROPERTIES
 #
 # RIL
 rild.libpath=/system/lib/libsemc_ril.so
@@ -86,3 +88,6 @@ ro.ril.def.agps.feature=1
 
 # Extra stuff
 ro.data_usage_show=true
+
+#kitkat slim alot xD for low memory devices maybe can help 
+ ro.config.low_ram=true
