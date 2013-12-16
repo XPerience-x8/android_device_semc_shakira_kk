@@ -1,7 +1,7 @@
 android_device_semc_shakira
 ==========================
 
-Device configuration for the X8 aka shakira
+Device configuration for the X8 aka shakira work with ARMV6 sources
 
 Getting Started
 ---------------
@@ -11,7 +11,7 @@ familiar with [Git and Repo](http://source.android.com/source/version-control.ht
 
 To initialize your local repository using the CyanogenMod trees, use a command like this:
 
-    repo init -u git://github.com/androidarmv6/android.git -b cm-10.1
+    repo init -u git://github.com/XPerience-x8/android.git -b cm-11.0
 
 Then to sync up:
 
