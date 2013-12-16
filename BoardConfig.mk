@@ -1,5 +1,17 @@
+-include device/semc/msm7x27-common/BoardConfigCommon.mk
+-include vendor/semc/shakira/BoardConfigVendor.mk
+
+TARGET_BOOTLOADER_BOARD_NAME := shakira
+TARGET_OTA_ASSERT_DEVICE := E15i,E15a,E16i,E16a,shakira
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_BOOTLOADER_BOARD_NAME=shakira
+BOARD_CAMERA_NO_AUTOFOCUS := true
+BOARD_LIBSENSORS_AKM8975 := true
+
+# Kernel
+#TARGET_KERNEL_CONFIG := cyanogenmod_shakira_defconfig
+
 #
-# Copyright (C) 2013 The XPErience Project
+# Copyright (C) 2012 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,16 +25,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
--include device/semc/msm7x27-common/BoardConfigCommon.mk
-
-TARGET_BOOTLOADER_BOARD_NAME := shakira
-TARGET_OTA_ASSERT_DEVICE := E15i,E15a,E16i,E16a,shakira
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_BOOTLOADER_BOARD_NAME=shakira
-BOARD_LIBSENSORS_AKM8975 := true
-
-# Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_shakira_defconfig
 
 # Target
 TARGET_ARCH            := arm
@@ -46,6 +48,7 @@ TARGET_QCOM_DISPLAY_VARIANT             := legacy
 BOARD_ADRENO_DECIDE_TEXTURE_TARGET      := true
 BOARD_EGL_CFG                           := device/qcom/msm7x27/egl.cfg
 BOARD_EGL_NEEDS_LEGACY_FB               := true
+BOARD_ADRENO_DECIDE_TEXTURE_TARGET      := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE                := true
@@ -69,3 +72,16 @@ ENABLE_JSC_JIT          := true
 JS_ENGINE               := v8
 HTTP                    := chrome
 TARGET_FORCE_CPU_UPLOAD := true
+
+#XPERIENCE STUFFS
+BOARD_USE_SCREENCAP := true
+TARGET_OVERLAY_ALWAYS_DETERMINES_FORMAT := true
+TARGET_USE_SOFTWARE_AUDIO_AAC := true
+COPYBIT_MSM7K := true
+TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
+
+#Custom Flags
+COMMON_GLOBAL_CFLAGS += -DBINDER_COMPAT
+COMMON_GLOBAL_CFLAGS += -DECLAIR_LIBCAMERA
+COMMON_GLOBAL_CFLAGS += -DQCOM_LEGACY_OMX
+COMMON_GLOBAL_CFLAGS += -DANCIENT_GL
