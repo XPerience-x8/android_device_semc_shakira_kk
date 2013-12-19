@@ -1,3 +1,4 @@
+# (C) The XPERIENCE PROJECT 2013
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
@@ -19,5 +20,7 @@ PRODUCT_MANUFACTURER := Sony Ericsson
 #Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=E15i \
-    BUILD_FINGERPRINT="google/yakju/maguro:4.2.1/JOP40D/533553:user/release-keys" \
-    PRIVATE_BUILD_DESC="yakju-user 4.2.1 JOP40D 533553 release-keys"
+    PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:4.4.2/JWR66V/573038:user/release-keys" \
+    PRIVATE_BUILD_DESC="nakasi-user TeamMEX 4.4.2 JWR66V 573038 release-keys"
+    
+    
