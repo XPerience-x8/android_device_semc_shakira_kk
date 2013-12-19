@@ -3,6 +3,8 @@
 # 
 # TeamMEX DATA PROPERTIES
 #
+# (C) The XPERIENCE PROJECT 2013
+#
 # RIL
 rild.libpath=/system/lib/libsemc_ril.so
 rild.libargs=-d/dev/smd0
