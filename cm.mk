@@ -20,7 +20,7 @@ PRODUCT_MANUFACTURER := Sony Ericsson
 #Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=E15i \
-    PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:4.4.2/JWR66V/573038:user/release-keys" \
+    BUILD_FINGERPRINT="google/nakasi/grouper:4.4.2/JWR66V/573038:user/release-keys" \
     PRIVATE_BUILD_DESC="nakasi-user TeamMEX 4.4.2 JWR66V 573038 release-keys"
     
     
