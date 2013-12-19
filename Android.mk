@@ -1,3 +1,4 @@
+# (C) The XPERIENCE PROJECT 2013
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),shakira)
