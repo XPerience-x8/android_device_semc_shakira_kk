@@ -1,6 +1,6 @@
 [
     {
-        "repository": "android_kernel_semc_msm7x27",
+        "repository": "XPerience-x8/android_kernel_semc_msm7x27",
         "target_path": "kernel/semc/msm7x27",
         "branch": "cm-10.1"
     }, {
@@ -8,9 +8,9 @@
         "target_path": "device/qcom/msm7x27",
         "branch": "cm-10.1"
     }, {
-        "repository": "android_device_semc_msm7x27-common",
+        "repository": "XPerience-x8/android_device_semc_msm7x27-common_kk",
         "target_path": "device/semc/msm7x27-common",
-        "branch": "cm-10.1"
+        "branch": "cm-11.0"
     }, {
         "repository": "android_vendor_semc",
         "target_path": "vendor/semc",
