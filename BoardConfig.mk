@@ -25,7 +25,12 @@ BOARD_CAMERA_NO_AUTOFOCUS := true
 BOARD_LIBSENSORS_AKM8975 := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_shakira_defconfig
+#TARGET_KERNEL_CONFIG := nAa_shakira_defconfig
+#CROSS_COMPILE := arm-eabi
+#VARIANT_DEFCONFIG := nAa_shakira_defconfig
+
+#Temporary hack : skip building external/chromium_org
+PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
 
 
 # Target
@@ -38,6 +43,8 @@ TARGET_CPU_ABI2        := armeabi-v6l
 TARGET_CPU_VARIANT     := arm11
 TARGET_NO_BOOTLOADER   := true
 TARGET_NO_RADIOIMAGE   := true
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
+BOARD_AVOID_DRAW_TEXTURE_EXTENSION := true
 COMMON_GLOBAL_CFLAGS   += -DTARGET_MSM7x27
 
 # For assembly error
@@ -76,11 +83,11 @@ HTTP                    := chrome
 TARGET_FORCE_CPU_UPLOAD := true
 
 #XPERIENCE STUFFS
-BOARD_USE_SCREENCAP := true
+BOARD_USE_SCREENCAP 			:= true
 TARGET_OVERLAY_ALWAYS_DETERMINES_FORMAT := true
-TARGET_USE_SOFTWARE_AUDIO_AAC := true
-COPYBIT_MSM7K := true
-TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
+TARGET_USE_SOFTWARE_AUDIO_AAC 		:= true
+COPYBIT_MSM7K				:= true
+TARGET_LIBAGL_USE_GRALLOC_COPYBITS 	:= true
 
 #Custom Flags
 COMMON_GLOBAL_CFLAGS += -DBINDER_COMPAT

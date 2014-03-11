@@ -17,6 +17,13 @@ PRODUCT_BRAND := SEMC
 PRODUCT_MODEL := X8
 PRODUCT_MANUFACTURER := Sony Ericsson
 
+#
+# Boot files
+#
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
+endif
+
 #Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=E15i \
