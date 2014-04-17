@@ -89,7 +89,7 @@
     <bool translatable="false" name="config_wifi_background_scan_support">false</bool>
 
     <!-- Boolean indicating whether the wifi chipset has p2p support -->
-    <bool translatable="false" name="config_wifi_p2p_support">false</bool>
+    <add-resource type="bool" translatable="false" name="config_wifi_p2p_support">false</add-resource>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>

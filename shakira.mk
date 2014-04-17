@@ -16,7 +16,17 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
+#
+# Boot files
+#
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+  LOCAL_KERNEL := device/semc/shakira/kernel
+else
+  LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
 PRODUCT_COPY_FILES += \
+   $(LOCAL_KERNEL):kernel \
     $(LOCAL_PATH)/prebuilt/bin/tiap_cu:system/bin/tiap_cu \
     $(LOCAL_PATH)/prebuilt/bin/tiap_loader:system/bin/tiap_loader \
     $(LOCAL_PATH)/prebuilt/etc/media_profiles.xml:/system/etc/media_profiles.xml \

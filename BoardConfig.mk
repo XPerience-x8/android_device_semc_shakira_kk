@@ -6,4 +6,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_BOOTLOADER_BOARD_NAME=shakira
 BOARD_LIBSENSORS_AKM8975 := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_shakira_defconfig
+#TARGET_KERNEL_CONFIG := cyanogenmod_shakira_defconfig
+
+#Temporary hack : skip building external/chromium_org
+PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
+
+RECOVERY_FSTAB_VERSION := 2
