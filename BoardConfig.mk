@@ -9,6 +9,6 @@ BOARD_LIBSENSORS_AKM8975 := true
 #TARGET_KERNEL_CONFIG := cyanogenmod_shakira_defconfig
 
 #Temporary hack : skip building external/chromium_org
-PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
+#PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
 
 RECOVERY_FSTAB_VERSION := 2
